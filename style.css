@@ -93,6 +93,7 @@
   }
   .controls{
     justify-self: center;
+    padding: auto;
   }
   .credits{
     position: fixed;
