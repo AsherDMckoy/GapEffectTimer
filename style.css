@@ -8,6 +8,13 @@
     --clr-neutral-600: hsl(0, 0%, 20%); /*Charcoal Grey*/
     --clr-neutral-200: hsl(0, 0%, 50%); /*Gunmetal Grey*/
     --clr-neutral-100: hsl(0, 0%, 80%); /*Platinum*/
+
+    /*Fonts: */
+    --ff-accent: 'Orbitron', serif;
+    --ff-base: 'Montserrat', sans-serif;
+
+    --fw-bold: 700;
+    --fw-regular: 400;
 }
 
 /*
@@ -62,3 +69,49 @@
   #root, #__next {
     isolation: isolate;
   }
+
+  /*General Styling*/
+  body{
+    font-family: var(--ff-base);
+    font-weight: var(--fw-regular);
+    font-size: 1rem;
+    color: var(--clr-primary-600);
+    background-color: var(--clr-neutral-600);
+  }
+  .mainWindow{
+    display: grid;
+    max-height: 100vh;
+  }
+  .menubar{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    background-color: var(--clr-neutral-700);
+    max-height: min-content;
+  }
+  .menubar__item{
+    padding: 1rem;
+  }
+  .controls{
+    justify-self: center;
+  }
+  .credits{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  .btn {
+    height: 5em;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: var(--clr-primary-600);
+    margin: 1rem;
+  }
+  .hidden{
+    display: none;
+  }
+ 
+
+
+  

@@ -4,39 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Gap Effect Timer</title>
 </head>
 <body>
     <main class="mainWindow">
         <div class="menubar">
-            <div class="menubar__logo">My Logo</div>
-            <div class="menubar__title">Gap Effect Timer</div>
-            <div class="menubar__settings">Settings</div>
-        </div>
-        <div class="settingsModal">
-            <div class="modal__title">Settings</div>
-            <div class="modal__duration">
-                <p>Focus Time (Minutes)</p>
-                <div class="modal__focustTime slider"></div>
-            </div>
-            <div class="modal__colorPicker">
-                <p>Color</p>
-                <div class="modal__colorOptions"></div>
+            <div class="menubar__item hidden">My Logo</div>
+            <div class="menubar__item">Gap Effect Timer</div>
+            <div class="menubar__item"> Settings
             </div>
         </div>
         <div class="timerContainer">
-            <div class="timer">
-                <p>svg goes here</p>
-                <p>12:00</p>
-            </div>
+                <svg class="timer" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="45" stroke="#fff" stroke-width="3" fill="none" />
+                    <circle id="progress" cx="50" cy="50" r="45" stroke="#ff0000" stroke-width="1" fill="none" stroke-dasharray="283.5" transform="rotate(-90, 50, 50)" />
+                    <text class="timer__number" x="50" y="50" text-anchor="middle" dominant-baseline="middle" font-size="24" font-family="Arial">25:00</text>
+                </svg>                  
         </div>
         <div class="controls">
-            <button class="controls__restart btn">Restart</button>
-            <button class="controls__pause btn">Pause</button>
-            <button class="controls__stop btn">Stop</button>
+            <button class="controls__item btn">Restart</button>
+            <button class="controls__item btn">Pause</button>
+            <button class="controls__item btn">Stop</button>
         </div>
     </main>
+    <div class="settingsModal hidden">
+        <div class="modal__title">Settings</div>
+        <div class="modal__duration">
+            <p>Focus Time (Minutes)</p>
+            <div class="modal__focustTime slider"></div>
+        </div>
+        <div class="modal__colorPicker">
+            <p>Color</p>
+            <div class="modal__colorOptions"></div>
+        </div>
+    </div>
     <footer class="credits">
         <p class="github">github I'm Awesome</p>
     </footer>
