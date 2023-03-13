@@ -1,3 +1,15 @@
+:root {
+    /* Primary Colors */
+    --clr-primary-600: hsl(210, 100%, 50%); /*Electric Blue:*/
+    --clr-primary-700: hsl(330, 100%, 50%); /*Neon Pink*/
+
+    /* Neutral Colors: */
+    --clr-neutral-700: hsl(0, 0%, 10%); /*Dark Charcoal*/
+    --clr-neutral-600: hsl(0, 0%, 20%); /*Charcoal Grey*/
+    --clr-neutral-200: hsl(0, 0%, 50%); /*Gunmetal Grey*/
+    --clr-neutral-100: hsl(0, 0%, 80%); /*Platinum*/
+}
+
 /*
   1. Use a more-intuitive box-sizing model.
 */
